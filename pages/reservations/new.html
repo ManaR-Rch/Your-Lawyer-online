@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Réservation - Cabinet Juridique Excellence</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/reservations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cabinet Juridique Excellence</div>
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../lawyers/list.html">Nos Avocats</a></li>
+                <li><a href="new.html" class="active">Réservation</a></li>
+                <li><a href="history.html">Historique</a></li>
+                <li><a href="../auth/login.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-container">
+        <div class="reservation-steps">
+            <div class="step active">1. Choix de l'avocat</div>
+            <div class="step">2. Sélection du créneau</div>
+            <div class="step">3. Confirmation</div>
+        </div>
+
+        <div class="reservation-content">
+            <section class="lawyer-selection">
+                <h2>Choisir un avocat</h2>
+                <div class="lawyers-list">
+                    <div class="lawyer-option selected">
+                        <img src="../../images/lawyer1.jpg" alt="Me. Sophie Martin">
+                        <div class="lawyer-details">
+                            <h3>Me. Sophie Martin</h3>
+                            <p>Droit des affaires</p>
+                            <p class="availability">Prochain créneau disponible: Demain 14h00</p>
+                        </div>
+                    </div>
+
+                    <div class="lawyer-option">
+                        <img src="../../images/lawyer2.jpg" alt="Me. Thomas Bernard">
+                        <div class="lawyer-details">
+                            <h3>Me. Thomas Bernard</h3>
+                            <p>Droit civil</p>
+                            <p class="availability">Prochain créneau disponible: Aujourd'hui 16h00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="time-selection hidden">
+                <h2>Choisir un créneau</h2>
+                <div class="calendar-widget">
+                    <!-- Le calendrier sera intégré ici -->
+                </div>
+                <div class="time-slots">
+                    <h3>Créneaux disponibles</h3>
+                    <div class="slots-grid">
+                        <button class="time-slot available">09:00</button>
+                        <button class="time-slot">10:00</button>
+                        <button class="time-slot available">11:00</button>
+                        <button class="time-slot">14:00</button>
+                        <button class="time-slot available">15:00</button>
+                        <button class="time-slot">16:00</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="confirmation hidden">
+                <h2>Confirmer votre rendez-vous</h2>
+                <div class="reservation-summary">
+                    <h3>Récapitulatif</h3>
+                    <p><strong>Avocat:</strong> Me. Sophie Martin</p>
+                    <p><strong>Date:</strong> 15 Mars 2024</p>
+                    <p><strong>Heure:</strong> 14:00</p>
+                </div>
+                <form class="confirmation-form">
+                    <div class="form-group">
+                        <label for="motif">Motif de la consultation</label>
+                        <textarea id="motif" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes supplémentaires (optionnel)</label>
+                        <textarea id="notes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Confirmer la réservation</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="reservation-navigation">
+            <button class="btn-secondary btn-prev hidden">Précédent</button>
+            <button class="btn-primary btn-next">Suivant</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Cabinet Juridique Excellence. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

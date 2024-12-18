@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des Réservations - Cabinet Juridique Excellence</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/reservations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cabinet Juridique Excellence</div>
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../lawyers/list.html">Nos Avocats</a></li>
+                <li><a href="new.html">Réservation</a></li>
+                <li><a href="history.html" class="active">Historique</a></li>
+                <li><a href="../profile/edit.html">Mon Profil</a></li>
+                <li><a href="../auth/logout.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="history-container">
+        <h1>Historique des Réservations</h1>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="status">Statut</label>
+                <select id="status">
+                    <option value="all">Tous</option>
+                    <option value="pending">En attente</option>
+                    <option value="confirmed">Confirmé</option>
+                    <option value="completed">Terminé</option>
+                    <option value="cancelled">Annulé</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date-range">Période</label>
+                <select id="date-range">
+                    <option value="all">Toutes les dates</option>
+                    <option value="upcoming">À venir</option>
+                    <option value="past">Passées</option>
+                    <option value="month">Ce mois</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="reservations-list">
+            <div class="reservation-card upcoming">
+                <div class="reservation-header">
+                    <h3>Consultation Droit des Affaires</h3>
+                    <span class="status pending">En attente</span>
+                </div>
+                <div class="reservation-details">
+                    <p><strong>Avocat:</strong> Me. Sophie Martin</p>
+                    <p><strong>Date:</strong> 15 Mars 2024</p>
+                    <p><strong>Heure:</strong> 14:00</p>
+                    <p><strong>Motif:</strong> Consultation sur création d'entreprise</p>
+                </div>
+                <div class="reservation-actions">
+                    <button class="btn-secondary">Modifier</button>
+                    <button class="btn-danger">Annuler</button>
+                </div>
+            </div>
+
+            <div class="reservation-card past">
+                <div class="reservation-header">
+                    <h3>Consultation Droit Civil</h3>
+                    <span class="status completed">Terminé</span>
+                </div>
+                <div class="reservation-details">
+                    <p><strong>Avocat:</strong> Me. Thomas Bernard</p>
+                    <p><strong>Date:</strong> 1 Mars 2024</p>
+                    <p><strong>Heure:</strong> 10:00</p>
+                    <p><strong>Motif:</strong> Conseil juridique immobilier</p>
+                </div>
+                <div class="reservation-actions">
+                    <button class="btn-primary">Voir le compte-rendu</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn-page">&lt;</button>
+            <button class="btn-page active">1</button>
+            <button class="btn-page">2</button>
+            <button class="btn-page">3</button>
+            <button class="btn-page">&gt;</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Cabinet Juridique Excellence. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

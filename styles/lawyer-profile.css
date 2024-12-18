@@ -1,0 +1,113 @@
+/* Styles pour le profil avocat */
+.lawyer-profile {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.profile-info .specialty {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info .experience {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.expertise, .biography {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expertise h2, .biography h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.expertise ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.expertise li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.expertise li::before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+.biography p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.availability {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / -1;
+}
+
+.availability h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.calendar-widget {
+  margin-bottom: 1rem;
+  min-height: 300px;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+}
