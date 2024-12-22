@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <header>
         <nav>
-            <div class="logo">Cabin Juridique Excellence</div>
+            <div class="logo">Cabinet  Juridique Excellence</div>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <!-- <li><a href="reservation.html">Réservation</a></li> -->
