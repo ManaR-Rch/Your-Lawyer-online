@@ -65,7 +65,7 @@ Le projet "Cabinet Juridique Excellence" est une plateforme web dédiée à la g
   - Réservations en attente et approuvées.
   - Prochain client à consulter.
 
-
+---
 
 ## Phase 4 : Développement Frontend
 ### Design
