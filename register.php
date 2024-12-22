@@ -107,8 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="logo">Cabinet Juridique Excellence</div>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
-                <!-- <li><a href="reservation.html">Réservation</a></li> -->
-                <li><a href="login.php" class="active">Connexion</a></li>
+                                <li><a href="login.php" class="active">Connexion</a></li>
                 <li><a href="register.php">Inscription</a></li>
             </ul>
         </nav>
