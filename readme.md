@@ -105,8 +105,8 @@ Le projet "Cabinet Juridique Excellence" est une plateforme web dédiée à la g
 ---
 
 ## Auteur
-- **Nom du développeur** : [Votre nom]
-- **Contact** : [Votre email]
+- **Nom du développeur** : MARCHOUBE Manar 
+- **Contact** : manarmarchou6@gmail.com
 
 ## License
 Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus de détails.
