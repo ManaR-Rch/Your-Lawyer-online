@@ -78,7 +78,6 @@ WHERE id_avocat = 2;
 UPDATE Consultation
 SET statut = 'acceptée'
 WHERE id_consultation = 1;
-
 UPDATE Non_disponible
 SET date_fin = '2024-12-23'
 WHERE unvailbe_id = 1;
