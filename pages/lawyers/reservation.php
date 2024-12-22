@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">CabinetJ uridique Excellence</div>
+            <div class="logo">Cabinet J uridique Excellence</div>
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="../index.html">deconnexion</a></li>
