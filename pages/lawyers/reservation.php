@@ -18,7 +18,7 @@
     </header>
 
     <main class="reservation-container">
-        <h2>Réserver une consultation</h2>
+        <h2>Réserverune consultation</h2>
         <div class="reservation-form">
             <?php
             // Connexion à la base de données
