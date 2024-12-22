@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="logo">Cabinet Juridique Excellence</div>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
-                                <li><a href="login.php" class="active">Connexion</a></li>
+                <li><a href="login.php" class="active">Connexion</a></li>
                 <li><a href="register.php">Inscription</a></li>
             </ul>
         </nav>
@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <input type="password" id="confirm_password" name="confirm_password" required>
         </div>
         <div class="form-group">
-            <label for="role">Rôle</label>
+            <label for="role">Role</label>
             <select id="role" name="role" required>
                 <option value="client">Client</option>
                 <option value="avocat">Avocat</option>
