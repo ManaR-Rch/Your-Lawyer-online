@@ -11,10 +11,10 @@
         <nav>
             <div class="logo">Cabinet Juridique Excellence</div>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="pages/reservation.html">Réservation</a></li>
-                <li><a href="pages/login.html">Connexion</a></li>
-                <li><a href="pages/register.html">Inscription</a></li>
+                <li><a href="index.php" class="active">Accueil</a></li>
+                <!-- <li><a href="pages/reservation.html">Réservation</a></li> -->
+                <li><a href="login.php">Connexion</a></li>
+                <li><a href="register.php">Inscription</a></li>
             </ul>
         </nav>
     </header>

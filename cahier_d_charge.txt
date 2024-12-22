@@ -1,0 +1,58 @@
+Phase 1 : Planification et Analyse
+ Analyse du cahier des charges pour clarifier les fonctionnalités principales et secondaires.
+ Conception du modèle de données (ERD) pour gérer les rôles, profils, réservations, et disponibilités.
+ Définir les technologies à utiliser pour le projet (HTML5, CSS3, JavaScript, PHP, MySQL, etc.).
+Phase 2 : Mise en place de la base de données
+ Créer les tables nécessaires dans la base de données :
+Utilisateurs (clients et avocats).
+Détails des avocats (spécialités, biographie, etc.).
+Réservations.
+Disponibilités des avocats.
+ Ajouter des relations entre les tables (foreign keys).
+ Préparer des scripts pour tester les données.
+Phase 3 : Développement Backend
+Inscription et Connexion
+ Implémenter le système d'inscription avec validation (clients et avocats).
+ Implémenter le système de connexion avec redirection selon le rôle (client ou avocat).
+ Ajouter le hashage des mots de passe (bcrypt ou Argon2).
+Gestion des Réservations
+ Développer les endpoints pour gérer les réservations (ajout, modification, suppression).
+ Gérer l'affichage des créneaux horaires disponibles pour les avocats.
+ Permettre aux avocats d'accepter ou de refuser les demandes.
+Gestion des Disponibilités
+ Créer un système pour que les avocats définissent leurs disponibilités.
+ Afficher les créneaux disponibles en temps réel pour les clients.
+Gestion des Profils
+ Ajouter les fonctionnalités de modification des informations personnelles.
+ Gérer les détails des avocats (photo, biographie, spécialités, coordonnées).
+Statistiques Avancées pour les Avocats
+ Implémenter un tableau de bord pour les statistiques (demandes en attente, approuvées, etc.).
+ Ajouter un affichage des informations sur le prochain client.
+Phase 4 : Développement Frontend
+Design
+ Concevoir une interface utilisateur moderne et élégante.
+ Créer des pages responsives pour mobile, tablette et desktop.
+Page Client
+ Créer une page pour afficher les profils des avocats.
+ Ajouter un système de réservation de consultations.
+ Intégrer un tableau de gestion des réservations avec historique.
+ Permettre aux clients de modifier leurs informations personnelles.
+Page Avocat
+ Développer un tableau de bord pour gérer les réservations.
+ Ajouter une interface pour gérer les disponibilités et les détails du profil.
+ Intégrer des modals pour afficher les informations des réservations.
+Fonctionnalités JavaScript
+ Valider les formulaires avec Regex (email, téléphone, mot de passe, etc.).
+ Ajouter des modals dynamiques pour des actions (confirmation de réservation, messages d'erreur).
+ Intégrer SweetAlerts pour des alertes élégantes.
+ Ajouter un calendrier interactif pour les créneaux disponibles.
+Phase 5 : Sécurité
+ Implémenter la protection contre les failles XSS (sanitisation des entrées).
+ Utiliser des requêtes préparées pour éviter les injections SQL.
+ Ajouter des tokens CSRF pour sécuriser les actions sensibles.
+ Tester les vulnérabilités potentielles et appliquer des correctifs.
+Phase 6 : Tests et Déploiement
+ Effectuer des tests unitaires pour chaque fonctionnalité.
+ Tester l'intégration et les scénarios d'utilisation (exemple : client réservant une consultation).
+ Tester la compatibilité sur différents navigateurs et appareils.
+ Déployer le site web sur un serveur.
