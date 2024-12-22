@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <input type="password" id="confirm_password" name="confirm_password" required>
         </div>
         <div class="form-group">
-            <label for="role">Role</label>
+            <label for="role">Rôle</label>
             <select id="role" name="role" required>
                 <option value="client">Client</option>
                 <option value="avocat">Avocat</option>
