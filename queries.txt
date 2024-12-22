@@ -1,0 +1,43 @@
+/*CREATE DATABASE LAWYER;
+USE DfitnessATABASE LAWYER;
+
+-- Table Utilisateur
+CREATE TABLE Utilisateur (
+    id_user INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    mot_de_passe VARCHAR(100) NOT NULL,
+    téléphone VARCHAR(15),
+    role ENUM('client', 'avocat') NOT NULL
+);
+
+-- Table avocat_detailles
+CREATE TABLE avocat_detailles (
+    id_detaille INT(11) PRIMARY KEY AUTO_INCREMENT,
+    id_avocat INT(11) NOT NULL,
+    location VARCHAR(100),
+    biographie TEXT,
+    specialites VARCHAR(100),
+    experience VARCHAR(20),
+    FOREIGN KEY (id_avocat) REFERENCES Utilisateur(id_user) ON DELETE CASCADE
+);
+
+-- Table Consultation
+CREATE TABLE Consultation (
+    id_consultation INT(11) PRIMARY KEY AUTO_INCREMENT,
+    id_client INT(11) NOT NULL,
+    id_avocat INT(11) NOT NULL,
+    date_consultation DATE NOT NULL,
+    statut ENUM('en_attente', 'acceptée', 'refusée') DEFAULT 'en_attente',
+    FOREIGN KEY (id_client) REFERENCES Utilisateur(id_user) ON DELETE CASCADE,
+    FOREIGN KEY (id_avocat) REFERENCES Utilisateur(id_user) ON DELETE CASCADE
+);
+
+-- Table Non_disponible
+CREATE TABLE Non_disponible (
+    unvailbe_id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    id_avocat INT(11) NOT NULL,
+    date_debut DATE NOT NULL,
+    date_fin DATEfitness NOT NULL,
+    FOREIGN KEY (id_avocat) REFERENCES Utilisateur(id_user) ON DELETE CASCADE
+);
