@@ -41,3 +41,45 @@ CREATE TABLE Non_disponible (
     date_fin DATEfitness NOT NULL,
     FOREIGN KEY (id_avocat) REFERENCES Utilisateur(id_user) ON DELETE CASCADE
 );
+
+INSERT INTO Utilisateur (nom, email, mot_de_passe, téléphone, role)
+VALUES 
+('Alice Dupont', 'alice.dupont@example.com', 'hashed_password1', '0123456789', 'client'),
+('Jean Martin', 'jean.martin@example.com', 'hashed_password2', '0987654321', 'avocat');
+
+
+INSERT INTO avocat_detailles (id_avocat, location, biographie, specialites, experience)
+VALUES 
+(2, 'Paris, France', 'Avocat spécialisé en droit des affaires.', 'Droit des affaires, Fiscalité', '10 ans');
+
+
+INSERT INTO Consultation (id_client, id_avocat, date_consultation, statut)
+VALUES 
+(1, 2, '2024-12-25', 'en_attente');
+
+/* Ajouter des disponibilités non disponibles */
+INSERT INTO Non_disponible (id_avocat, date_debut, date_fin)
+VALUES 
+(2, '2024-12-20', '2024-12-22');
+
+/* ---- UPDATE DATA ---- */
+
+
+UPDATE Utilisateur
+SET email = 'alice.newemail@example.com'
+WHERE id_user = 1;
+
+
+UPDATE avocat_detailles
+SET biographie = 'Avocat expérimenté en droit des affaires et fiscalité.'
+WHERE id_avocat = 2;
+
+
+UPDATE Consultation
+SET statut = 'acceptée'
+WHERE id_consultation = 1;
+
+
+UPDATE Non_disponible
+SET date_fin = '2024-12-23'
+WHERE unvailbe_id = 1;
